@@ -67,14 +67,15 @@ function init() {
                 type: 'input',
                 title: 'email',
                 message: 'Please enter your email',
-            }
-        ]).then((answers)=>{
-            const fileName = '';
-
-        })
-
-    // TODO: Create a function to write README file
-    function writeToFile(fileName, data) { }
+            }])
+        .then((answers) => {
+            const fileName = './Develop/examples/README.md';
+            const data = generateMarkDown(answers);
+            // TODO: Create a function to write README file
+            fs.writeToFile(fileName, data, (err) => {
+                err ? console.log(err) : console.log('Generated README.md');
+            });
+        });
 }
 
 // Function call to initialize app
