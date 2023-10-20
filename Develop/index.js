@@ -15,6 +15,7 @@ const generateMarkDown = require('./utils/generateMarkdown');
 // TODO: Create a function to initialize app
 function init() {
     inquirer
+        //prompt that will take in user input in order to create the readme file
         .prompt([
             {
                 type: 'input',
@@ -69,9 +70,9 @@ function init() {
                 message: 'Please enter your email',
             }])
         .then((answers) => {
-            const fileName = './Develop/examples/README.md';
-            const data = generateMarkDown(answers);
-            // TODO: Create a function to write README file
+            const fileName = './Develop/examples/README.md'; //sets up variable that will be used to set up location and name of file
+            const data = generateMarkDown(answers); //will send answersinto generateMarkDown
+            // function to write README file
             fs.writeToFile(fileName, data, (err) => {
                 err ? console.log(err) : console.log('Generated README.md');
             });
