@@ -1,5 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// will set up badge based on chosen license
 function renderLicenseBadge(license) {
   let badge;
   if(license === 'None'){
@@ -17,14 +18,14 @@ function renderLicenseBadge(license) {
   else if(license === 'ISC License'){
     badge = "ISC"
   }
-
-  return `![Static badge](https://img.shields.io/badge/License-${badge}-blue)`;
+  //badge format was taken from https://shields.io/search?q=license and https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+  return `![Static badge](https://img.shields.io/badge/License-${badge}-blue)`; //sets up license badge
 }
 
 
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// license link is set up based on what is chosen, and will return an empty string if nothing is chosen
+//links were taken from https://choosealicense.com/ 
 function renderLicenseLink(license) {
   let linkToLicense;
   if(license === 'Apache License 2.0'){
@@ -45,8 +46,7 @@ function renderLicenseLink(license) {
   return linkToLicense;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// will set up license section of readme based on what is chosen
 function renderLicenseSection(license) {
   let licensePlaceHolder;
   if(license === 'None'){
@@ -58,8 +58,10 @@ function renderLicenseSection(license) {
   return licensePlaceHolder;
 }
 
-// TODO: Create a function to generate markdown for README
+//generate markdown for README
 function generateMarkdown(data) {
+  // whatever follows ` after return will be set up as the readme file
+  //table of contents is set up so if one of thewords is clicked it will take reader to that section of readme
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 

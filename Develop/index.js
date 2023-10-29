@@ -3,16 +3,9 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkDown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// function to initialize app
 // list of inputs:title, description, installations, usage, license, 
 // contributors, tests, github username, email address for any questions 
-//const questions = [
-//
-//];
-
-
-
-// TODO: Create a function to initialize app
 function init() {
     inquirer
         //prompt that will take in user input in order to create the readme file
