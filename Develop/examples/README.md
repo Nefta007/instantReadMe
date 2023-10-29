@@ -1,9 +1,9 @@
-# Trials take two
-  ![Static Badge](https://img.shields.io/badge/License-Apache License 2.0-blue)
+# r
+  ![badge](https://shields.io/badge/License-Apache License 2.0-blue.svg)
 
   ## Description
 
-  This is test run of code
+  r
 
   ## Table of Contents
 
@@ -16,21 +16,23 @@
   - [Questions](#questions)
 
   ## Installation
-  please type npm i into termina
+  r
 
   ## Usage
-  the usage is to create instant reademe file
+  r
 
-  undefined
+  ## License
+For more information on license please visit https://choosealicense.com/licenses/apache-2.0/
+
 
   ## Contributors
-  there are no contributers
+  r
 
   ## Tests
-  there are no test at the moment
+  r
 
   ## Questions
   In case you have questions you can reach me at:
-  My github: https://github.com/Nefta007 or
-  via email at: nperc001@ucr.edu
+  My github: https://github.com/r or
+  via email at: r
   
