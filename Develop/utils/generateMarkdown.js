@@ -1,15 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge = '';
+  let badge;
   if(license === 'None'){
-    return badge;
+    badge = '';
   }
-  else{
-    badge = "![badge](https://img.shields.io/badge/License-" + license + "-blue.svg)"
+  else if(license === 'Apache License 2.0'){
+    badge = "Apache%202.0";
   }
-  return badge;
+  else if(license === 'GNU GPLv3'){
+    badge = "GPLv3"
+  }
+  else if(license === 'MIT License'){
+    badge = "MIT"
+  }
+  else if(license === 'ISC License'){
+    badge = "ISC"
+  }
+
+  return `![Static badge](https://img.shields.io/badge/License-${badge}-blue)`;
 }
+
 
 
 // TODO: Create a function that returns the license link

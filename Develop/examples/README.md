@@ -1,9 +1,9 @@
-# r
-  ![badge](https://shields.io/badge/License-Apache License 2.0-blue.svg)
+# Trial Run
+  ![Static badge](https://img.shields.io/badge/License-MIT-blue)
 
   ## Description
 
-  r
+  Creates an instant readme
 
   ## Table of Contents
 
@@ -16,23 +16,23 @@
   - [Questions](#questions)
 
   ## Installation
-  r
+  Please use npm i in terminal
 
   ## Usage
-  r
+  this project is meant to create readme's
 
   ## License
-For more information on license please visit https://choosealicense.com/licenses/apache-2.0/
+For more information on license please visit https://choosealicense.com/licenses/mit/
 
 
   ## Contributors
-  r
+  There are no contributors at the moment
 
   ## Tests
-  r
+  No tests at the moment
 
   ## Questions
   In case you have questions you can reach me at:
-  My github: https://github.com/r or
-  via email at: r
+  My github: https://github.com/Nefta007 or
+  via email at: nperc001@ucr.edu
   
