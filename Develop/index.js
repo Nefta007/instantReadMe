@@ -29,17 +29,17 @@ function init() {
             },
             {
                 type: 'input',
-                title: 'installations',
+                name: 'installations',
                 message: 'Please give instilation instructions',
             },
             {
                 type: 'input',
-                title: 'usage',
+                name: 'usage',
                 message: 'What is the usage for this project',
             },
             {
                 type: 'list',
-                title: 'license',
+                name: 'license',
                 message: 'Please choose the license you are using',
                 choices: [
                     "Apache License 2.0",
@@ -51,29 +51,29 @@ function init() {
             },
             {
                 type: 'input',
-                title: 'contributors',
+                name: 'contributors',
                 message: 'Who has contributed in this project?',
             },
             {
                 type: 'input',
-                title: 'test',
+                name: 'test',
                 message: 'Are there any test instructions?',
             },
             {
                 type: 'input',
-                title: 'gitUserName',
+                name: 'gitUserName',
                 message: 'Please enter your GitHub username',
             },
             {
                 type: 'input',
-                title: 'email',
+                name: 'email',
                 message: 'Please enter your email',
             }])
         .then((answers) => {
-            const fileName = './Develop/examples/README.md'; //sets up variable that will be used to set up location and name of file
+            const fileName = './examples/README.md'; //sets up variable that will be used to set up location and name of file
             const data = generateMarkDown(answers); //will send answersinto generateMarkDown
             // function to write README file
-            fs.writeToFile(fileName, data, (err) => {
+            fs.writeFile(fileName, data, (err) => {
                 err ? console.log(err) : console.log('Generated README.md');
             });
         });
