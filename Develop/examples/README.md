@@ -1,9 +1,9 @@
-# Trial Run
+# Readme Generator
   ![Static badge](https://img.shields.io/badge/License-MIT-blue)
 
   ## Description
 
-  Creates an instant readme
+  This project will create readme's given a prompt
 
   ## Table of Contents
 
@@ -16,20 +16,20 @@
   - [Questions](#questions)
 
   ## Installation
-  Please use npm i in terminal
+  type npm i in terminal
 
   ## Usage
-  this project is meant to create readme's
+  This project is for creating readme's
 
   ## License
 For more information on license please visit https://choosealicense.com/licenses/mit/
 
 
   ## Contributors
-  There are no contributors at the moment
+  There are no current contributors to this project
 
   ## Tests
-  No tests at the moment
+  There are no test to be run at the moment
 
   ## Questions
   In case you have questions you can reach me at:
